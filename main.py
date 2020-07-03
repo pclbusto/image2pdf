@@ -4,7 +4,6 @@ import os
 import sys
 
 def create_pdf (lista_nombre_imagenes, nombre_archivo_salida):
-
     lista_imagenes = []
     for nombre_imagen in lista_nombre_imagenes:
         lista_imagenes.append(Image.open(nombre_imagen))
@@ -13,11 +12,14 @@ def create_pdf (lista_nombre_imagenes, nombre_archivo_salida):
 
 
 if __name__== "__main__":
-    if len(sys.argv) == 3:
-        file_name_list = [nombre_archivo for nombre_archivo in  os.listdir(sys.argv[1]) if nombre_archivo[-3:] in ['jpg', 'png', 'gif']]
-        create_pdf(file_name_list, sys.argv[2])
-    else:
-        print("python main.py 'RUTA IAMGENES' 'NOMBRE ARCHIVO PDF'")
+    # if len(sys.argv) == 3:
+    #     file_name_list = [nombre_archivo for nombre_archivo in  os.listdir(sys.argv[1]) if nombre_archivo[-3:] in ['jpg', 'png', 'gif']]
+    #     create_pdf(file_name_list, sys.argv[2])
+    # else:
+    #     print("python main.py 'RUTA IAMGENES' 'NOMBRE ARCHIVO PDF'")
+    print(os.direc)
+
+
 #
 # def showPopulation(*args):
 #     idxs = list_box.curselection()
