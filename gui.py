@@ -64,6 +64,5 @@ btn_open.grid(row=0, column=1, sticky="ew", padx=5, pady=5)
 btp_procesar.grid(row=1, column=1, sticky="ew", padx=5, pady=5)
 fr_buttons.grid(row=0, column=0, sticky="ns")
 check_bw = tk.Checkbutton(fr_buttons, text="Blanco y Negro", variable=var_check_bw)
-check_bw.grid(row=2, column=1, sticky="ns")
 
 window.mainloop()
