@@ -16,6 +16,7 @@ def create_pdf (lista_nombre_imagenes, nombre_archivo_salida):
         else:
             imagen = imagen.convert('L')
 
+        imagen = imagen.resize(((int)(0.75*imagen.size[0]),(int)(0.75*imagen.size[1])))
         lista_imagenes.append(imagen)
     print(lista_imagenes)
     lista_normalizada = [imagen.convert('RGB') for imagen in lista_imagenes]
@@ -27,6 +28,7 @@ def open_file():
     """Open a file for editing."""
     filepath = askdirectory()
     if not filepath:
+
         return
     # txt_edit.delete(1.0, tk.END)
     print(filepath)
